@@ -17,7 +17,7 @@ function TradingViewWidget({ stock_symbol }) {
           "hide_side_toolbar": true,
           "hide_top_toolbar": true,
           "hide_legend": false,
-          "hide_volume": false,
+          "hide_volume": true,
           "hotlist": false,
           "interval": "D",
           "locale": "en",
