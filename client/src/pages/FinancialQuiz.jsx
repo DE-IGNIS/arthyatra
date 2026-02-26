@@ -1,4 +1,4 @@
-function MarketQuiz() {
+function FinancialQuiz() {
   return (
     <div className="min-h-[calc(100vh-56px)] bg-stone-50 flex items-center justify-center px-4">
       <div className="text-center">
@@ -16,4 +16,4 @@ function MarketQuiz() {
   );
 }
 
-export default MarketQuiz;
+export default FinancialQuiz;
