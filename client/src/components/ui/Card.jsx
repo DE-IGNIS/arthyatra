@@ -7,13 +7,16 @@ function getGridCols(count) {
   return "grid-cols-1 sm:grid-cols-2";
 }
 
-export default function Card({ day, scene, options = [], onSelect, selected }) {
+export default function Card({ day, scene, options = [], onSelect, selected ,invested }) {
   return (
     <div className="bg-white border border-stone-200 rounded-2xl shadow-sm overflow-hidden">
 
       <div className="px-6 py-4 border-b border-stone-100 flex items-center gap-3">
         <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold tracking-wide bg-stone-900 text-white uppercase">
           {day}
+        </span>
+        <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold tracking-wide bg-stone-900 text-white uppercase">
+          {invested}
         </span>
       </div>
 
