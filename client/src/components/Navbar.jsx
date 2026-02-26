@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
-import logo from "../assets/react.svg";
+import logo from "../assets/arth-icon.svg";
 
 const simulatorFeatures = [
   {
@@ -207,7 +207,7 @@ function Navbar() {
           >
             <img
               src={logo}
-              alt=""
+              alt="ArthYatra website logo"
               width="22"
               height="22"
               className="transition-transform duration-300 group-hover:rotate-12"
