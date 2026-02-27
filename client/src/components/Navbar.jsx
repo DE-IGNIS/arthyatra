@@ -36,8 +36,8 @@ const simulatorFeatures = [
     ),
   },
   {
-    to: "/market-quiz",
-    label: "Market Quiz",
+    to: "/financial-quiz",
+    label: "Financial Quiz",
     description: "Test your financial knowledge",
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
