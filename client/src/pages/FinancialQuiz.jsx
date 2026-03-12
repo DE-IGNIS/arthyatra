@@ -5,11 +5,7 @@ const questions = [
     id: "1",
     question: "How comfortable are you with taking financial risks?",
     options: [
-      {
-        q_id: "A",
-        score: 1,
-        option: "I prefer to play it extremely safe.",
-      },
+      { q_id: "A", score: 1, option: "I prefer to play it extremely safe." },
       {
         q_id: "B",
         score: 2,
@@ -80,17 +76,175 @@ const questions = [
       },
     ],
   },
+
+  // 4
+  {
+    id: "4",
+    question: "How do you typically manage your monthly budget?",
+    options: [
+      {
+        q_id: "A",
+        score: 1,
+        option: "I strictly track every expense and plan carefully.",
+      },
+      {
+        q_id: "B",
+        score: 2,
+        option: "I follow a budget but allow some flexibility.",
+      },
+      {
+        q_id: "C",
+        score: 3,
+        option: "I have a rough idea of spending but do not track closely.",
+      },
+      {
+        q_id: "D",
+        score: 5,
+        option: "I rarely track expenses and spend as needed.",
+      },
+    ],
+  },
+
+  // 5
+  {
+    id: "5",
+    question:
+      "How do you react when your investment drops significantly in value?",
+    options: [
+      { q_id: "A", score: 1, option: "I remain calm and hold my position." },
+      {
+        q_id: "B",
+        score: 2,
+        option: "I review the situation before making changes.",
+      },
+      { q_id: "C", score: 3, option: "I feel anxious but wait for recovery." },
+      {
+        q_id: "D",
+        score: 5,
+        option: "I quickly change strategy or move funds.",
+      },
+    ],
+  },
+
+  // 6
+  {
+    id: "6",
+    question: "How diversified is your investment portfolio?",
+    options: [
+      {
+        q_id: "A",
+        score: 1,
+        option: "I spread investments across multiple asset types.",
+      },
+      {
+        q_id: "B",
+        score: 2,
+        option: "I diversify within a few selected categories.",
+      },
+      { q_id: "C", score: 3, option: "I invest mostly in one or two areas." },
+      {
+        q_id: "D",
+        score: 5,
+        option: "I concentrate heavily on a single opportunity.",
+      },
+    ],
+  },
+
+  // 7
+  {
+    id: "7",
+    question: "What is your primary financial goal?",
+    options: [
+      {
+        q_id: "A",
+        score: 1,
+        option: "Preserving capital and financial security.",
+      },
+      { q_id: "B", score: 2, option: "Steady and reliable growth over time." },
+      { q_id: "C", score: 3, option: "Building wealth at a moderate pace." },
+      {
+        q_id: "D",
+        score: 5,
+        option: "Maximizing wealth as quickly as possible.",
+      },
+    ],
+  },
+
+  // 8
+  {
+    id: "8",
+    question: "How stable is your current source of income?",
+    options: [
+      { q_id: "A", score: 1, option: "Very stable with predictable earnings." },
+      { q_id: "B", score: 2, option: "Mostly stable with minor fluctuations." },
+      {
+        q_id: "C",
+        score: 3,
+        option: "Somewhat unstable or performance-based.",
+      },
+      { q_id: "D", score: 5, option: "Highly variable or uncertain income." },
+    ],
+  },
+
+  // 9
+  {
+    id: "9",
+    question: "How often do you review or adjust your investments?",
+    options: [
+      {
+        q_id: "A",
+        score: 1,
+        option: "Rarely; I prefer a long-term hands-off approach.",
+      },
+      { q_id: "B", score: 2, option: "Occasionally, based on major events." },
+      {
+        q_id: "C",
+        score: 3,
+        option: "Regularly, to stay aligned with trends.",
+      },
+      {
+        q_id: "D",
+        score: 5,
+        option: "Very frequently to capture short-term opportunities.",
+      },
+    ],
+  },
+
+  // 10
+  {
+    id: "10",
+    question:
+      "How interested are you in learning about new financial tools or markets?",
+    options: [
+      {
+        q_id: "A",
+        score: 1,
+        option: "I prefer traditional and familiar options only.",
+      },
+      { q_id: "B", score: 2, option: "I explore new ideas cautiously." },
+      {
+        q_id: "C",
+        score: 3,
+        option: "I actively research emerging opportunities.",
+      },
+      {
+        q_id: "D",
+        score: 5,
+        option: "I eagerly adopt new and experimental markets.",
+      },
+    ],
+  },
 ];
 
 function getScoreProfile(score) {
-  if (score <= 5)
+  if (score <= 20)
     return {
       label: "Conservative",
       description:
         "You prefer stability and safety in your financial decisions.",
       color: "bg-emerald-100 text-emerald-800",
     };
-  if (score <= 9)
+  if (score <= 35)
     return {
       label: "Moderate",
       description: "You balance risk and reward with a thoughtful approach.",
@@ -112,7 +266,7 @@ function FinancialQuiz() {
   const handleOption = (e) => {
     var option = e.target.value;
 
-    if (count === 3) {
+    if (count === questions.length) {
       setQuizEnd(true);
     }
 
@@ -199,7 +353,7 @@ function FinancialQuiz() {
                   <div
                     className="h-full rounded-full bg-stone-900 transition-all duration-500"
                     style={{
-                      width: `${Math.min((quiz_score / 15) * 100, 100)}%`,
+                      width: `${Math.min((quiz_score / 50) * 100, 100)}%`,
                     }}
                   />
                 </div>

@@ -8,7 +8,16 @@ const simulatorFeatures = [
     label: "Investment Journey",
     description: "Simulate 6-month market decisions",
     icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
         <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
       </svg>
     ),
@@ -18,7 +27,16 @@ const simulatorFeatures = [
     label: "SIP Calculator",
     description: "Plan your monthly investments",
     icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
         <rect x="2" y="3" width="20" height="14" rx="2" />
         <line x1="8" y1="21" x2="16" y2="21" />
         <line x1="12" y1="17" x2="12" y2="21" />
@@ -30,7 +48,16 @@ const simulatorFeatures = [
     label: "Risk Profiler",
     description: "Discover your risk appetite",
     icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
       </svg>
     ),
@@ -40,7 +67,16 @@ const simulatorFeatures = [
     label: "Financial Quiz",
     description: "Test your financial knowledge",
     icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
         <circle cx="12" cy="12" r="10" />
         <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
         <line x1="12" y1="17" x2="12.01" y2="17" />
@@ -54,7 +90,16 @@ const navLinks = [
     to: "/content",
     label: "Content",
     icon: (
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <svg
+        width="14"
+        height="14"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
         <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
         <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
       </svg>
@@ -64,7 +109,16 @@ const navLinks = [
     to: "/about",
     label: "About",
     icon: (
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <svg
+        width="14"
+        height="14"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
         <circle cx="12" cy="12" r="10" />
         <line x1="12" y1="16" x2="12" y2="12" />
         <line x1="12" y1="8" x2="12.01" y2="8" />
@@ -75,7 +129,16 @@ const navLinks = [
 
 function SimulatorIcon() {
   return (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg
+      width="14"
+      height="14"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
       <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
     </svg>
   );
@@ -92,7 +155,10 @@ function ChevronDown({ open }) {
       strokeWidth="2.5"
       strokeLinecap="round"
       strokeLinejoin="round"
-      style={{ transition: "transform 200ms", transform: open ? "rotate(180deg)" : "rotate(0deg)" }}
+      style={{
+        transition: "transform 200ms",
+        transform: open ? "rotate(180deg)" : "rotate(0deg)",
+      }}
     >
       <polyline points="6 9 12 15 18 9" />
     </svg>
@@ -101,7 +167,16 @@ function ChevronDown({ open }) {
 
 function HamburgerIcon() {
   return (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
       <line x1="3" y1="6" x2="21" y2="6" />
       <line x1="3" y1="12" x2="21" y2="12" />
       <line x1="3" y1="18" x2="21" y2="18" />
@@ -111,7 +186,16 @@ function HamburgerIcon() {
 
 function CloseIcon() {
   return (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
       <line x1="18" y1="6" x2="6" y2="18" />
       <line x1="6" y1="6" x2="18" y2="18" />
     </svg>
@@ -130,7 +214,9 @@ function SimulatorDropdown({ onClose }) {
   return (
     <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-80 bg-white border border-stone-200 rounded-2xl shadow-lg overflow-hidden z-50">
       <div className="px-4 pt-3.5 pb-2 border-b border-stone-100">
-        <p className="text-xs font-semibold text-stone-400 uppercase tracking-widest">Simulator Tools</p>
+        <p className="text-xs font-semibold text-stone-400 uppercase tracking-widest">
+          Simulator Tools
+        </p>
       </div>
       <div className="grid grid-cols-2 gap-px bg-stone-100 p-px">
         {simulatorFeatures.map(({ to, label, description, icon }) => {
@@ -149,10 +235,14 @@ function SimulatorDropdown({ onClose }) {
                 {icon}
               </span>
               <div>
-                <p className={`text-sm font-semibold leading-tight ${isActive ? "text-white" : "text-stone-800"}`}>
+                <p
+                  className={`text-sm font-semibold leading-tight ${isActive ? "text-white" : "text-stone-800"}`}
+                >
                   {label}
                 </p>
-                <p className={`text-xs mt-0.5 leading-snug ${isActive ? "text-stone-300" : "text-stone-400"}`}>
+                <p
+                  className={`text-xs mt-0.5 leading-snug ${isActive ? "text-stone-300" : "text-stone-400"}`}
+                >
                   {description}
                 </p>
               </div>
@@ -176,7 +266,9 @@ function Navbar() {
     setMobileSimulatorOpen(false);
   };
 
-  const isSimulatorActive = simulatorFeatures.some((f) => f.to === location.pathname);
+  const isSimulatorActive = simulatorFeatures.some(
+    (f) => f.to === location.pathname,
+  );
 
   // Close dropdown on click outside
   useEffect(() => {
@@ -218,7 +310,10 @@ function Navbar() {
           </NavLink>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-0.5" aria-label="Main navigation">
+          <nav
+            className="hidden md:flex items-center gap-0.5"
+            aria-label="Main navigation"
+          >
             {/* Simulator Dropdown */}
             <div className="relative" ref={dropdownRef}>
               <button
@@ -260,6 +355,13 @@ function Navbar() {
                 {label}
               </NavLink>
             ))}
+
+            <NavLink
+              to={"/signup"}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm text-stone-600 hover:bg-stone-100 hover:text-stone-900"
+            >
+              <span className="opacity-70">SignUp</span>
+            </NavLink>
           </nav>
 
           {/* Mobile Hamburger */}
@@ -277,7 +379,10 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div id="mobile-menu" className="md:hidden border-t border-stone-200 bg-stone-50 px-4 pt-2 pb-4">
+        <div
+          id="mobile-menu"
+          className="md:hidden border-t border-stone-200 bg-stone-50 px-4 pt-2 pb-4"
+        >
           <nav className="flex flex-col gap-0.5" aria-label="Mobile navigation">
             {/* Mobile Simulator expandable */}
             <div>
@@ -313,14 +418,20 @@ function Navbar() {
                             : "bg-white border border-stone-200 text-stone-700 hover:bg-stone-50"
                         }`}
                       >
-                        <span className={isActive ? "text-white" : "text-stone-500"}>
+                        <span
+                          className={isActive ? "text-white" : "text-stone-500"}
+                        >
                           {icon}
                         </span>
                         <div>
-                          <p className={`text-xs font-semibold ${isActive ? "text-white" : "text-stone-800"}`}>
+                          <p
+                            className={`text-xs font-semibold ${isActive ? "text-white" : "text-stone-800"}`}
+                          >
                             {label}
                           </p>
-                          <p className={`text-[10px] mt-0.5 leading-snug ${isActive ? "text-stone-300" : "text-stone-400"}`}>
+                          <p
+                            className={`text-[10px] mt-0.5 leading-snug ${isActive ? "text-stone-300" : "text-stone-400"}`}
+                          >
                             {description}
                           </p>
                         </div>

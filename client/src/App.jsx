@@ -6,6 +6,7 @@ import Simulator from "./pages/InvestmentSimulator";
 import SipCalculator from "./pages/SipCalculator";
 import RiskProfiler from "./pages/RiskProfiler";
 import FinancialQuiz from "./pages/FinancialQuiz";
+import SignUp from "./pages/Signup";
 import Layout from "./layouts/Layout";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/financial-quiz" element={<FinancialQuiz />} />
           <Route path="/content" element={<Content />} />
           <Route path="/about" element={<About />} />
+          <Route path="/signup" element={<SignUp />} />
         </Route>
       </Routes>
     </>
